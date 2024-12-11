@@ -1,0 +1,12 @@
+{
+  "name": "my-fullstack-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run start --prefix client\" \"npm run server --prefix server\"",
+    "server": "node server/index.js"
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
